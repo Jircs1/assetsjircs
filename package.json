@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@hapi/joi": "^16.1.7",
-    "cryptocurrency-icons": "0.13.0",
+    "cryptocurrency-icons": "0.18.1",
     "execa": "^3.3.0",
     "listr": "^0.14.3",
     "node-fetch": "^2.6.1",
