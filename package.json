@@ -19,7 +19,7 @@
     "token-uuid": "ts-node scripts/token-uuid.ts"
   },
   "dependencies": {
-    "@hapi/joi": "^16.1.7",
+    "@hapi/joi": "^17.1.1",
     "cryptocurrency-icons": "0.13.0",
     "execa": "^3.3.0",
     "listr": "^0.14.3",
