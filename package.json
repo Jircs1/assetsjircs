@@ -16,7 +16,9 @@
     "lint:ts": "tsc --noEmit",
     "lint:tslint": "tslint --project .",
     "validate": "ts-node scripts/validate-json.ts",
-    "token-uuid": "ts-node scripts/token-uuid.ts"
+    "token-uuid": "ts-node scripts/token-uuid.ts",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "@hapi/joi": "^16.1.7",
@@ -25,7 +27,8 @@
     "listr": "^0.14.3",
     "node-fetch": "^2.6.1",
     "parse-eth-tokens": "^0.3.0",
-    "string-similarity": "^3.0.0"
+    "string-similarity": "^3.0.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@types/hapi__joi": "^16.0.3",
@@ -59,5 +62,6 @@
     "hooks": {
       "pre-commit": "yarn run lint && yarn run test && lint-staged"
     }
-  }
+  },
+  "snyk": true
 }
